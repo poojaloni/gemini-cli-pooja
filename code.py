@@ -24,9 +24,6 @@ chat_session = client.chats.create(model="gemini-2.0-flash")
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
-next_message = ""
-next_image = ""
-
 
 def allowed_file(filename):
     """Returns if a filename is supported via its extension"""
